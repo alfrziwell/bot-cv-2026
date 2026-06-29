@@ -1,6 +1,11 @@
 import telebot
-import pandas as pd
 import os
+
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+
+import pandas as pd
 import re
 from telebot import types
 from io import BytesIO
